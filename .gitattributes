@@ -1,0 +1,21 @@
+# Automatically detect text files and normalize line endings
+* text=auto
+
+# Enforce LF line endings for source and configuration files (recommended for consistency)
+*.rs    text eol=lf
+*.toml  text eol=lf
+*.lock  text eol=lf
+*.md    text eol=lf
+
+# Enforce LF for shell scripts (if applicable)
+*.sh    text eol=lf
+
+# For Windows-specific scripts, you might want CRLF endings
+*.bat   text eol=crlf
+
+# Treat common binary file types as binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
